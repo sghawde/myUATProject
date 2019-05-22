@@ -1,0 +1,32 @@
+{
+    "class_id": "com-snaplogic-snaps-binary-binarybasicauthaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "snaplogic"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "SFTP_Account"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "password": {
+                "expression": false,
+                "fp": "fd18fe245b29a30e8203a484d96baa4d79deeb0bd0d3ce5ab284017d9ba87d0d",
+                "key": "account-cloud-managed",
+                "sym_iv": "NpSZNRFrWdr28YuO4s+cEQ==",
+                "sym_key": "ZSgYM8dLQ+tR8vA/pV2RGllwwX0QEWl7q5E2ahue/8MdsiMYlVntwUerbCMeorKI+7B93l95ePcUENlLaeHJH/cs2XNNsWKJ2LYc4FrT28PTZJVsi94Tj96wR0u4qn9hkvTsT1uiUxbeD6mxQGsErBfAHRdKuyuyPZV8eA0+7ZpIfIkPZAW8f/RiiJo6UlFK4rxMdQvo4ZvMPgiDdZa0RZo3lfDBOcDrHF2Uuoe/ssnf9TWZ2tgV2Sw+U3bopKSx6Abjq6FwsrKbYee9e5dfRXiO+D1cYW3XEgAlwbmIvFikHfFvPtOxY+u3/EA2SL7bsFP0u7fZ2dq9gYoOi3CCLg==",
+                "value": "ZAL8Mop+lvaL+86Dorcc3A=="
+            },
+            "username": {
+                "expression": false,
+                "value": "sachin@ip-10-237-182-99"
+            }
+        },
+        "view_serial": 100
+    }
+}
