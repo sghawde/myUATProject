@@ -1,247 +1,19 @@
 {
     "class_id": "com-snaplogic-pipeline",
-    "class_map": {
-        "11111111-1111-1111-1111-000000000004": {
-            "class_build_tag": "SNAPSHOT",
-            "class_fqid": "com-snaplogic-snaps-mysql-select_3-SNAPSHOT",
-            "class_id": "com-snaplogic-snaps-mysql-select",
-            "class_version": 3,
-            "instance_fqid": "11111111-1111-1111-1111-000000000004_1",
-            "instance_id": "11111111-1111-1111-1111-000000000004",
-            "instance_version": 1,
-            "property_map": {
-                "account": {},
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "MySQL - Select"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "output": {
-                    "outputRows": {
-                        "label": {
-                            "value": "rows"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "limitOffset": {
-                        "expression": false,
-                        "value": null
-                    },
-                    "limitRows": {
-                        "expression": false,
-                        "value": null
-                    },
-                    "orderBy": {
-                        "value": []
-                    },
-                    "schemaName": {
-                        "expression": false,
-                        "value": "enron"
-                    },
-                    "tableName": {
-                        "expression": false,
-                        "value": "`enron`.`picture2`"
-                    },
-                    "whereClause": {
-                        "value": null
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000005": {
-            "class_build_tag": "SNAPSHOT",
-            "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-SNAPSHOT",
-            "class_id": "com-snaplogic-snaps-transform-datatransform",
-            "class_version": 4,
-            "instance_fqid": "11111111-1111-1111-1111-000000000005_1",
-            "instance_id": "11111111-1111-1111-1111-000000000005",
-            "instance_version": 1,
-            "property_map": {
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "snap_schema_fqid": {
-                            "instance_id": "11111111-1111-1111-1111-000000000006",
-                            "output_view_id": "outputRows"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Mapper (Data)"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "nullSafeAccess": {
-                        "value": false
-                    },
-                    "passThrough": {
-                        "value": false
-                    },
-                    "transformations": {
-                        "value": {
-                            "mappingRoot": {
-                                "value": "$"
-                            },
-                            "mappingTable": {
-                                "value": [
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$IMAGE"
-                                        },
-                                        "targetPath": {
-                                            "value": "$DOC"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000007": {
-            "class_build_tag": "SNAPSHOT",
-            "class_fqid": "com-snaplogic-snaps-oracle-insert_1-SNAPSHOT",
-            "class_id": "com-snaplogic-snaps-oracle-insert",
-            "class_version": 1,
-            "instance_fqid": "11111111-1111-1111-1111-000000000007_1",
-            "instance_id": "11111111-1111-1111-1111-000000000007",
-            "instance_version": 1,
-            "property_map": {
-                "account": {},
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Oracle - Insert"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "input": {
-                    "inputRows": {
-                        "label": {
-                            "value": "rows"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "output": {
-                    "output101": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "createTable": {
-                        "value": false
-                    },
-                    "executable_during_suggest": {
-                        "value": true
-                    },
-                    "execution_mode": {
-                        "value": "Validate & Execute"
-                    },
-                    "schemaName": {
-                        "expression": false,
-                        "value": "TECtonic"
-                    },
-                    "tableName": {
-                        "expression": false,
-                        "value": "\"TECTONIC\".\"LOB_TABLE\""
-                    }
-                },
-                "view_serial": 101
-            }
-        }
-    },
     "class_version": 9,
     "link_map": {
         "link101": {
-            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
             "isGoto": false,
-            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "outputRows"
         },
         "link102": {
-            "dst_id": "11111111-1111-1111-1111-000000000007",
+            "dst_id": "11111111-1111-1111-1111-000000000003",
             "dst_view_id": "inputRows",
             "isGoto": false,
-            "src_id": "11111111-1111-1111-1111-000000000005",
+            "src_id": "11111111-1111-1111-1111-000000000001",
             "src_view_id": "output0"
         }
     },
@@ -268,7 +40,7 @@
         },
         "input": {},
         "output": {
-            "11111111-1111-1111-1111-000000000007_output101": {
+            "11111111-1111-1111-1111-000000000003_output101": {
                 "label": {
                     "value": "Oracle - Insert - output0"
                 },
@@ -286,7 +58,7 @@
     "render_map": {
         "default_snaplex": null,
         "detail_map": {
-            "11111111-1111-1111-1111-000000000004": {
+            "11111111-1111-1111-1111-000000000000": {
                 "error": {},
                 "grid_x_int": 5,
                 "grid_y_int": 2,
@@ -295,7 +67,7 @@
                 "rot_int": 0,
                 "rot_tail_int": 0
             },
-            "11111111-1111-1111-1111-000000000005": {
+            "11111111-1111-1111-1111-000000000001": {
                 "error": {},
                 "grid_x_int": 6,
                 "grid_y_int": 2,
@@ -304,7 +76,7 @@
                 "rot_int": 0,
                 "rot_tail_int": 0
             },
-            "11111111-1111-1111-1111-000000000007": {
+            "11111111-1111-1111-1111-000000000003": {
                 "error": {},
                 "grid_x_int": 7,
                 "grid_y_int": 2,
@@ -319,10 +91,10 @@
         "scale_ratio": 1
     },
     "snap_map": {
-        "11111111-1111-1111-1111-000000000004": {
+        "11111111-1111-1111-1111-000000000000": {
             "class_id": "com-snaplogic-snaps-mysql-select",
             "class_version": 3,
-            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "instance_id": "11111111-1111-1111-1111-000000000000",
             "property_map": {
                 "account": {},
                 "error": {
@@ -383,10 +155,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000005": {
+        "11111111-1111-1111-1111-000000000001": {
             "class_id": "com-snaplogic-snaps-transform-datatransform",
             "class_version": 4,
-            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "instance_id": "11111111-1111-1111-1111-000000000001",
             "property_map": {
                 "error": {
                     "error0": {
@@ -394,7 +166,7 @@
                             "value": "error0"
                         },
                         "snap_schema_fqid": {
-                            "instance_id": "11111111-1111-1111-1111-000000000006",
+                            "instance_id": "11111111-1111-1111-1111-000000000002",
                             "output_view_id": "outputRows"
                         },
                         "view_type": {
@@ -464,10 +236,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000007": {
+        "11111111-1111-1111-1111-000000000003": {
             "class_id": "com-snaplogic-snaps-oracle-insert",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "instance_id": "11111111-1111-1111-1111-000000000003",
             "property_map": {
                 "account": {},
                 "error": {

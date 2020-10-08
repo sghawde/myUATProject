@@ -1,157 +1,11 @@
 {
     "class_id": "com-snaplogic-pipeline",
-    "class_map": {
-        "11111111-1111-1111-1111-000000000002": {
-            "class_build_tag": "snapsrc1017",
-            "class_fqid": "com-snaplogic-snaps-binary-read_1-snapsrc1017",
-            "class_id": "com-snaplogic-snaps-binary-read",
-            "class_version": 1,
-            "instance_fqid": "11111111-1111-1111-1111-000000000002_2",
-            "instance_id": "11111111-1111-1111-1111-000000000002",
-            "instance_version": 2,
-            "property_map": {
-                "account": {
-                    "account_ref": {
-                        "expression": false,
-                        "value": {
-                            "label": {
-                                "expression": false,
-                                "value": "SFTP_Account"
-                            },
-                            "ref_class_id": {
-                                "value": "com-snaplogic-snaps-binary-binarybasicauthaccount"
-                            },
-                            "ref_id": {
-                                "expression": false,
-                                "value": "7c46d5ee-041b-4399-9071-f1826ca14461"
-                            }
-                        }
-                    }
-                },
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Multi File Reader"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "settings": {
-                    "executeDuringPreview": {
-                        "value": true
-                    },
-                    "execution_mode": {
-                        "value": "Validate & Execute"
-                    },
-                    "selectedFiles": {
-                        "value": [
-                            {
-                                "fileFolder": {
-                                    "expression": false,
-                                    "value": "/home/ec2-user/sghawde/dump18"
-                                },
-                                "includeSubfolders": {
-                                    "value": false
-                                },
-                                "wildcardRegex": {
-                                    "expression": false,
-                                    "value": "*.pdf"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000003": {
-            "class_build_tag": "snapsrc1017",
-            "class_fqid": "com-snaplogic-snaps-transform-binarytodocument_1-snapsrc1017",
-            "class_id": "com-snaplogic-snaps-transform-binarytodocument",
-            "class_version": 1,
-            "instance_fqid": "11111111-1111-1111-1111-000000000003_1",
-            "instance_id": "11111111-1111-1111-1111-000000000003",
-            "instance_version": 1,
-            "property_map": {
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Binary to Document"
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "codec": {
-                        "value": "ENCODE_BASE64"
-                    },
-                    "ignoreEmptyStream": {
-                        "value": false
-                    }
-                },
-                "view_serial": 100
-            }
-        }
-    },
     "class_version": 9,
     "link_map": {
         "link100": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         }
     },
@@ -178,7 +32,7 @@
         },
         "input": {},
         "output": {
-            "11111111-1111-1111-1111-000000000003_output0": {
+            "11111111-1111-1111-1111-000000000001_output0": {
                 "label": {
                     "value": "Binary to Document - output0"
                 },
@@ -206,7 +60,7 @@
     "render_map": {
         "default_snaplex": null,
         "detail_map": {
-            "11111111-1111-1111-1111-000000000002": {
+            "11111111-1111-1111-1111-000000000000": {
                 "error": {},
                 "grid_x_int": 3,
                 "grid_y_int": 1,
@@ -218,7 +72,7 @@
                 "rot_tail_int": 0,
                 "source": "snap catagory"
             },
-            "11111111-1111-1111-1111-000000000003": {
+            "11111111-1111-1111-1111-000000000001": {
                 "error": {},
                 "grid_x_int": 4,
                 "grid_y_int": 1,
@@ -236,10 +90,10 @@
         "scale_ratio": 1
     },
     "snap_map": {
-        "11111111-1111-1111-1111-000000000002": {
+        "11111111-1111-1111-1111-000000000000": {
             "class_id": "com-snaplogic-snaps-binary-read",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "instance_id": "11111111-1111-1111-1111-000000000000",
             "property_map": {
                 "account": {
                     "account_ref": {
@@ -318,10 +172,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000003": {
+        "11111111-1111-1111-1111-000000000001": {
             "class_id": "com-snaplogic-snaps-transform-binarytodocument",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "instance_id": "11111111-1111-1111-1111-000000000001",
             "property_map": {
                 "error": {
                     "error0": {
